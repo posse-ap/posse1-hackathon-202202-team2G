@@ -34,3 +34,23 @@ const party = [
   ['Awich『Gila Gila』'],
   ['Penthouse『Jukebox Driver』'],
 ];
+
+
+//配列をシャッフルする関数（Fisher-Yates shuffle）
+function shuffle(arr){ 
+  for (let k = arr.length - 1; k > 0; k--){
+    const j = Math.floor(Math.random() * (k + 1));
+    [arr[j],arr[k]] = [arr[k],arr[j]];
+  }
+}
+//下で呼び出しテスト、これで呼び出しできるの確認済み
+shuffle(positive);
+shuffle(calm);
+shuffle(intense);
+shuffle(cry);
+shuffle(party);
+// console.log(positive);
+// console.log(calm);
+// console.log(intense);
+// console.log(cry);
+// console.log(party);
