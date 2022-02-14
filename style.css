@@ -1,3 +1,10 @@
+header h1{
+  font-family: "Sofia", sans-serif;
+}
+main h1{
+  font-family: "Sofia", sans-serif;
+  font-size: 5rem;
+}
 .card {
   width: 44rem; 
   height: 23rem; 
