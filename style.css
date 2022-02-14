@@ -1,9 +1,9 @@
 header{
-  /* background-color: ; */
   background:#DEFFFC;
   -webkit-animation:colour 10s linear infinite;
   -moz-animation:colour 10s linear infinite;
 }
+
 header h1{
   font-family: "Sofia", sans-serif;
 }
