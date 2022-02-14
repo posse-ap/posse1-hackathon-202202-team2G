@@ -4,6 +4,7 @@ header h1{
 main h1{
   font-family: "Sofia", sans-serif;
   font-size: 5rem;
+  text-shadow: 0.2rem 0.2rem 0 #c3a400;
 }
 .card {
   width: 44rem; 
