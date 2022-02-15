@@ -7,9 +7,6 @@ header{
 header h1{
   font-family: "Sofia", sans-serif;
 }
-.position{
-  position: relative;
-}
 main{
   /* background-color: #f8dfd2; */
   background:#DEFFFC;
