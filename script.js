@@ -49,7 +49,9 @@ for(let i = 0; i < questions.length; i++) {
 choiceSet.forEach(function(selection, index) {
 for(let l = 0; l < selection.length; l++) {
   let selected =document.getElementById(`choiced${index+1}-${l+1}`);
-  console.log(selected)
+  // 設問重ねる処理
+  let question = document.getElementsByClassName('card');
+  window.onload = question[0].style.display = 'block';
   selected.addEventListener('click', function() {
     selected.classList.add('change-color');
     document.getElementById(`choiced${index+1}-1`).style.pointerEvents = "none";
@@ -57,6 +59,12 @@ for(let l = 0; l < selection.length; l++) {
     document.getElementById(`choiced${index+1}-3`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-4`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-5`).style.pointerEvents = "none";
+    if(index < questions.length) {
+      setTimeout(() => {
+        question[index].style.display = 'none';
+        question[index+1].style.display = 'block';
+      }, 500);
+    }
   })
   }
 })
@@ -121,4 +129,8 @@ shuffle(party);
 // console.log(intense);
 // console.log(cry);
 // console.log(party);
+
+
+
+
 

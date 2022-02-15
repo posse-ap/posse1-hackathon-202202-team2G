@@ -20,6 +20,7 @@ main h1{
   text-shadow: 0.2rem 0.2rem 0 #c3a400;
 }
 .card {
+  display: none;
   width: 44rem; 
   height: 23rem; 
   margin: 1rem;
