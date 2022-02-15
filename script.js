@@ -50,6 +50,9 @@ for(let i = 0; i < questions.length; i++) {
 choiceSet.forEach(function(selection, index) {
 for(let l = 0; l < selection.length; l++) {
   let selected =document.getElementById(`choiced${index+1}-${l+1}`);
+  // 設問重ねる処理
+  let question = document.getElementsByClassName('card');
+  window.onload = question[0].style.display = 'block';
   // console.log(selected)
   selected.addEventListener('click', function() {
     selected.classList.add('change-color');
@@ -58,6 +61,10 @@ for(let l = 0; l < selection.length; l++) {
     document.getElementById(`choiced${index+1}-3`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-4`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-5`).style.pointerEvents = "none";
+      setTimeout(() => {
+        question[index].style.display = 'none';
+        question[index+1].style.display = 'block';
+      }, 500);
   })
   }
 })
@@ -125,6 +132,9 @@ shuffle(party);
 // console.log(party);
 
 
+
+
+
 //どの値がチェックされたかをカウントする
 //カウントされた値の合計値を基に条件分岐
 //if文に条件分岐された各々のジャンル先でシャッフル関数発火させる
@@ -132,7 +142,7 @@ shuffle(party);
 $(function(){
   //ボタンがクリックされた時
   $("button").click(function(){
-   
+
   //問題数を取得
   var qNum = questions.length;
   // id属性で要素を取得
