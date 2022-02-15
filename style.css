@@ -31,7 +31,6 @@ main h1{
   text-align: center;
   margin: 0.6rem;
   border:1px solid #ebebeb; 
-  width:37rem; 
   height: 3.1rem; 
   font-weight: bold; 
   background-color: #ffffff; 
@@ -45,9 +44,12 @@ main h1{
   /* cssの優先順位 !importantがないと上の.card ul liの方が優先されて、背景色が変わらない */
   background-color: royalblue !important;
 }
-/* .answer{
-  text-align: center;
-} */
+.answer{
+  display: none;
+}
+.showBox {
+  display: block;
+}
 
 .song{
   font-size: 10rem;
