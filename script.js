@@ -33,7 +33,7 @@ const choiceSet = [
 
 for(let i = 0; i < questions.length; i++) {
   let choicesContent = 
-  '<div class="card">'
+  '<div class="card row">'
   + `<p>${questions[i]}</p>`
   + `<ul id="choice${i+1}">`
   + `<li id="choiced${i+1}-1"><label><input type="checkbox" name="q01" class="typeA"> ${choiceSet[i][0]}</label></li>`
