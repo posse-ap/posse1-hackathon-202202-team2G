@@ -61,20 +61,6 @@ for(let l = 0; l < selection.length; l++) {
   }
 })
 
-// ボタンをクリックした時の処理
-// 色が変わる
-// choiceSet.forEach(function(choices) {
-//   for(let i = 1; i <= choices.length; i++) {
-//     let selectChoice =document.getElementById(`choice-${i}`);
-//     console.log(selectChoice);
-//       selectChoice.addEventListener("click", function () {
-//         selectChoice.classList.add("change-color");
-//   })
-// }
-// });
-
-
-
 //ジャンルごとの曲名を配列に入れる
 //明るい
 const positive = [
@@ -109,3 +95,23 @@ const party = [
   ['Awich『Gila Gila』'],
   ['Penthouse『Jukebox Driver』'],
 ];
+
+
+//配列をシャッフルする関数（Fisher-Yates shuffle）
+function shuffle(arr){ 
+  for (let k = arr.length - 1; k > 0; k--){
+    const j = Math.floor(Math.random() * (k + 1));
+    [arr[j],arr[k]] = [arr[k],arr[j]];
+  }
+}
+//下で呼び出しテスト、これで呼び出しできるの確認済み
+shuffle(positive);
+shuffle(calm);
+shuffle(intense);
+shuffle(cry);
+shuffle(party);
+// console.log(positive);
+// console.log(calm);
+// console.log(intense);
+// console.log(cry);
+// console.log(party);
