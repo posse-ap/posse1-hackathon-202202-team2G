@@ -39,12 +39,35 @@ main h1{
   line-height: 3.1rem;
   list-style: none;
 }
+
+/* .answer{
+  text-align: center;
+} */
+
+.song{
+  font-size: 10rem;
+}
+
+
+/* .result{width:300px;
+  　　　　　　　　height:80px;
+  　　　　　　　　background:#ced;
+  　　　　　　　　border:1px solid #a7e;
+} */
+
 footer{
   background:#DEFFFC;
   -webkit-animation:colour 10s linear infinite;
   -moz-animation:colour 10s linear infinite;
 }
 
+.text-center{
+  font-family: 'Oswald', sans-serif;
+}
+
+.Twitter{
+  font-family: 'Oswald', sans-serif;
+}
 @-webkit-keyframes colour{
   0%{
     background:#c7e5e2
@@ -75,3 +98,4 @@ footer{
   }
 
 }
+

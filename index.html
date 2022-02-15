@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>Musual</title>
 </head>
 <body>
@@ -90,25 +93,27 @@
             </div>
         </div>
         <div class="answer">
-            <div>
-                あなたにおすすめの曲は星野源の恋です！
-            </div>
-            <div class="share-button">
+            <p class="text-center">あなたにおすすめの曲は...</p>
+            <p class="text-center">星野源の『恋』</p>
+            <p class="text-center">です！</p>
+        </div>
+            <div class="share-button text-center">
                 <!-- data-related→おすすめのユーザーを表示 -->
                 <!-- https://into-the-program.com/dataset/#datasetdatadata -->
                 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="Musual,POSSE" data-related="posse_program:PosseのTwitterアカウントです" data-size="large" data-show-count="false">Tweet</a>
                 <div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://posse-ap.github.io/posse1-hackathon-202202-team2G/" data-color="default" data-size="large" data-count="false" data-ver="3" style="display: none;"></div>
             </div>
-            <div class="answer-youtube">
+            <div class="answer-youtube text-center">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZeerrnuLi5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </main>
     <footer >
-        <h1 class="text-center">What's POSSE?</h1>
+        <h1 class="text-center">------------What's POSSE?------------</h1>
         <div class="d-flex row p-3">
             <div class="col-1"></div>
             <div class="introduction col-4">
+            <h1 class="text-center">Click me!</h1>
                 <!-- Button trigger modal -->
                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <img src="./img/IMG_2418-1.JPG" alt="" class="w-100 h-auto">
@@ -178,6 +183,7 @@
             </div>
             <div class="col-2"></div>
             <div class="twitter col-4">
+                <h1 class="Twitter text-center">Twitter</h1>
                 <a class="twitter-timeline" data-width="420" data-height="400"
                     href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw">Tweets by posse_program</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
