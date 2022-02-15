@@ -17,6 +17,7 @@ header h1{
   width: 100%;
   height: 50%;
 }
+
 main{
   /* background-color: #f8dfd2; */
   background:#DEFFFC;
@@ -52,7 +53,7 @@ main h1{
 
 /* 診断開始ボタン */
 .diagnosis-start-button {
-  display: none;
+  /* display: none; */
 }
 
 
@@ -74,9 +75,9 @@ main h1{
 
 
 /* .result{width:300px;
-  　　　　　　　　height:80px;
-  　　　　　　　　background:#ced;
-  　　　　　　　　border:1px solid #a7e;
+           height:80px;
+           background:#ced;
+           border:1px solid #a7e;
 } */
 
 footer{
