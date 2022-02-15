@@ -62,6 +62,12 @@ for(let l = 0; l < selection.length; l++) {
   }
 })
 
+let diagnosisStart = document.getElementById('diagnosisStartButton');
+let answerBox = document.getElementById('answer');
+diagnosisStart.addEventListener('click', function() {
+  answerBox.classList.add("showBox");
+})
+
 //ジャンルごとの曲名を配列に入れる
 //明るい Aタイプ
 const positive = [
