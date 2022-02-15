@@ -1,5 +1,4 @@
 'use strict';
-
 //ジャンルごとの曲名を配列に入れる
 //明るい
 const positive = [
