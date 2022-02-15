@@ -46,7 +46,7 @@ main h1{
   font-size: 1.4rem;
 }
 .card ul li{
-  text-align: center;
+  /* text-align: center; */
   margin: 0.6rem;
   border:1px solid #ebebeb; 
   height: 3.1rem; 
@@ -55,6 +55,7 @@ main h1{
   box-shadow: 0 0.2rem 0.2rem #e6e6e6; 
   line-height: 3.1rem;
   list-style: none;
+  
 }
 input[type=checkbox] {
   display: none; /* チェックボックス□を非表示にする */
@@ -66,6 +67,7 @@ label {
 label, input[type='checkbox'] {
   cursor: pointer;
 }
+
 
 /* 診断開始ボタン */
 .diagnosis-start-button {
