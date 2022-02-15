@@ -18,6 +18,12 @@ header h1{
   height: 50%;
 }
 
+.header-subtitle{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Shippori Mincho', serif;
+}
+
+
 main{
   /* background-color: #f8dfd2; */
   background:#DEFFFC;
@@ -98,18 +104,18 @@ footer{
 
 h2{
   font-size: 3rem;
+  font-family: serif;
 }
 
 h3{
   font-size: 3rem;
-}
-.text-center{
-  font-family: 'Oswald', sans-serif;
+  font-family:serif;
 }
 
-.Twitter{
-  font-family: 'Oswald', sans-serif;
+.modal-content{
+  font-family: serif;
 }
+
 .modal-body{
   display: flex;
 }
