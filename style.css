@@ -50,6 +50,12 @@ main h1{
   list-style: none;
 }
 
+/* 診断開始ボタン */
+.diagnosis-start-button {
+  display: none;
+}
+
+
 /* 選択肢の色を変える */
 .change-color {
   /* cssの優先順位 !importantがないと上の.card ul liの方が優先されて、背景色が変わらない */

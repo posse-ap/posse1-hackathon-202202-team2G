@@ -59,12 +59,10 @@ for(let l = 0; l < selection.length; l++) {
     document.getElementById(`choiced${index+1}-3`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-4`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-5`).style.pointerEvents = "none";
-    if(index < questions.length) {
       setTimeout(() => {
         question[index].style.display = 'none';
         question[index+1].style.display = 'block';
       }, 500);
-    }
   })
   }
 })
