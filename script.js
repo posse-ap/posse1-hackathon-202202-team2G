@@ -82,12 +82,45 @@ const positive = [
   ['Penthouse『...恋に落ちたら』'],
   ['乃木坂46『ざぶんざざぶん』'],
   ['乃木坂46『ファンタスティック三食パン』'],
+  ['ベリーグッドマン『ハイライト』'],
+  ['Twice『FANCY』'],
+  ['Official髭男dism『I LOVE』'],
+  ['YMO『君に、胸キュン。』'],
+  ['YMO『ライディーン』'],
+  ['MISIA『THE GLORY DAY』'],
+  ['ケルティック・ウーマン 『You Raise Me Up』'],
+  ['藤原さくら『かわいい』'],
+  ['GOT the beat『Step Back』'],
+  ['BENEE『Glitter』'],
+  ['Anne-Marrie『2002』'],
+  ['藤井風『燃えよ』'],
+  ['岡本真夜『アララの呪文』'],
+  ['おジャ魔女どれみ オープニング『おジャ魔女カーニバル!!』'],
+  ['ＧＯ-ＧＯ たまごっち！『たまごっち! オープニング主題歌』'],
+  ['緑黄色社会『キャラクター』']
 ];
 
 //落ち着いている Bタイプ
 const calm = [
   ['enthouse『あなたゆずり』'],
   ['宇多田ヒカル『Traveling』'],
+  ['Ochunism『グラス』'],
+  ['Billy Joel『Honesty』'],
+  ['槇原敬之『どんなときも』'],
+  ['BTS『The Truth Untold』'],
+  ['제이유나 (J.UNA)『Butterfly (알고있지만, OST』'],
+  ['小田和正『I LOVE YOU』'],
+  ['dodo『era it』'],
+  ['aiko『瞳』'],
+  ['岡崎体育『エクレア』'],
+  ['AAAMYYY『HOME』'],
+  ['Alesia Cara『Scraps to your bautiful』'],
+  ['宮川彬良『ゆうがたクインテットオープニング』']
+  ['kojikoji 『いつかのDAYS』'],
+  ['iri『COME BACK TO MY CITY』']
+  ['King Gnu『サマーレインダイバー』']
+  ['miwa『結』']
+  ['桐谷健太『海の声』']
 ];
 
 //激しい Cタイプ
@@ -95,6 +128,23 @@ const intense = [
   ['シンガーズハイ『daybreak』'],
   ['櫻坂46『なぜ恋をしてこなかったんだろう』'],
   ['日向坂46『青春の馬』'],
+  ['48『Tik Tok Winter 2021』'],
+  ['三浦大知『Blizered』'],
+  ['Aespa『Savage』'],
+  ['ITZY『DALLA DALLA』'],
+  ['Vaundy『不可抗力』'],
+  ['ちゃんみな 『ハレンチ』'],
+  ['Ayase『よくばり』'],
+  // ['B'z『Ultra Soul』'],
+  ['THE YELLOW MONKEY『JAM』'],
+  // [' L'Arc～en～Ciel『HONEY』'],
+  ['DOES『バクチ・ダンサー』'],
+  ['THE BLUE HEARTS『TRAIN-TRAIN』'],
+  ['AgustD『Daechwita』'],
+  ['millnium parade『2992』'],
+  ['Bish『ぴょ』'],
+  ['Doja Cat『Boss Bitch』'],
+  ['椎名林檎『本能』'],
 ];
 
 //泣ける Dタイプ
@@ -102,12 +152,47 @@ const cry = [
   ['日向坂46『まさか偶然…」'],
   ['乃木坂46『猫舌カモミールティー』'],
   ['Anly『カラノココロ』'],
+  ['川嶋あい『旅立ちの日に・・・』']
+  ['槇原敬之『もう恋なんてしない』']
+  ['Charlie Puth『We Don’t Talk Anymore』']
+  ['Lauv - changes']
+  ['ONE OK ROCK『Wasted Nights』']
+  ['back number『水平線』']
+  ['米津玄師『アイネクライネ』']
+  ['小田和正『緑の日々』']
+  ['大澤誉志幸『そして僕は途方に暮れる』']
+  ['斉藤由貴『卒業』']
+  ['島谷ひとみ『春待人/Camellia-カメリア-』']
+  ['島谷ひとみ『恋の雫』']
+  ['mom『マスク』']
+  ['Bon Iver『iMi』']
+  ['Tempalay『革命前夜』']
+  ['秋川雅史『千の風になって』']
+  ['星野源feat.PUNPEE『さらしもの』']
 ];
 
 //パーリー系 Eタイプ
 const party = [
   ['Awich『Gila Gila』'],
   ['Penthouse『Jukebox Driver』'],
+  ['TAXI feat. tofubeats『NOA』'],
+  ['RADIO FISH『PERFECT HUMAN』'],
+  ['平井堅『POP STAR』'],
+  ['Suchmos『STAY TUNE』'],
+  ['島谷ひとみ『Perseus-ペルセウス-』'],
+  // ['Zara Larsson『Ain't my fault』'],
+  ['「24K MAGIC」 BY BRUNO MARS'],
+  ['「LOVE ME NOW」BY JOHN LEGEND'],
+  ['「STAY」 BY ZEDD ＆ ALEISSA CARA'],
+  ['「SIDE TO SIDE」 BY ARIANA GRANDE ft. NICKI MINAJ'],
+  ['「THE CURE」 BY LADY GAGA'],
+  // ['「SAY YOU WON'T LET GO」 BY JAMES ARTHUR'],
+  ['「CHAINED TO THE RHYTHM」 BY KATY PERRY ft. SKIP MARLEY'],
+  ['Bebe Rexha『No broken hearts』'],
+  ['Ariana Grande『no tears to cry』'],
+  ['CHAI『N.E.O』'],
+  ['STUTS&松たか子『Presence I』'],
+  ['『Tones And I『Fly Away』']
 ];
 
 
