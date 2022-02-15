@@ -49,7 +49,6 @@ for(let i = 0; i < questions.length; i++) {
 choiceSet.forEach(function(selection, index) {
 for(let l = 0; l < selection.length; l++) {
   let selected =document.getElementById(`choiced${index+1}-${l+1}`);
-  console.log(selected)
   selected.addEventListener('click', function() {
     selected.classList.add('change-color');
     document.getElementById(`choiced${index+1}-1`).style.pointerEvents = "none";
