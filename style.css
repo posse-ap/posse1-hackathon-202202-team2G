@@ -41,6 +41,9 @@ main h1{
   width: 44rem; 
   height: 23rem; 
   margin: 1rem;
+  background-color: #DEFFFC;
+  -webkit-animation:colour 10s linear infinite;
+  -moz-animation:colour 10s linear infinite;
 }
 .card p {
   font-size: 1.4rem;
@@ -48,15 +51,15 @@ main h1{
 .card ul li{
   /* text-align: center; */
   margin: 0.6rem;
-  border:1px solid #ebebeb; 
+  /* border:1px solid #ebebeb;  */
   height: 3.1rem; 
   font-weight: bold; 
-  background-color: #ffffff; 
+  background-color: white;
   box-shadow: 0 0.2rem 0.2rem #e6e6e6; 
   line-height: 3.1rem;
   list-style: none;
-  
 }
+
 input[type=checkbox] {
   display: none; /* チェックボックス□を非表示にする */
 }
