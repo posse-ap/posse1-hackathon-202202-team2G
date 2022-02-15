@@ -36,11 +36,11 @@ for(let i = 0; i < questions.length; i++) {
   '<div class="card">'
   + `<p>${questions[i]}</p>`
   + `<ul id="choice${i+1}">`
-  + `<li id="choiced${i+1}-1"><label><input type="radio" name="q01" class="typeA"> ${choiceSet[i][0]}</label></li>`
-  + `<li id="choiced${i+1}-2"><label><input type="radio" name="q01" class="typeB"> ${choiceSet[i][1]}</label></li>`
-  + `<li id="choiced${i+1}-3"><label><input type="radio" name="q01" class="typeC"> ${choiceSet[i][2]}</label></li>`
-  + `<li id="choiced${i+1}-4"><label><input type="radio" name="q01" class="typeD"> ${choiceSet[i][3]}</label></li>`
-  + `<li id="choiced${i+1}-5"><label><input type="radio" name="q01" class="typeE"> ${choiceSet[i][4]}</label></li>`
+  + `<li id="choiced${i+1}-1"><label><input type="checkbox" name="q01" class="typeA"> ${choiceSet[i][0]}</label></li>`
+  + `<li id="choiced${i+1}-2"><label><input type="checkbox" name="q02" class="typeB"> ${choiceSet[i][1]}</label></li>`
+  + `<li id="choiced${i+1}-3"><label><input type="checkbox" name="q03" class="typeC"> ${choiceSet[i][2]}</label></li>`
+  + `<li id="choiced${i+1}-4"><label><input type="checkbox" name="q04" class="typeD"> ${choiceSet[i][3]}</label></li>`
+  + `<li id="choiced${i+1}-5"><label><input type="checkbox" name="q05" class="typeE"> ${choiceSet[i][4]}</label></li>`
   + '</ul>'
   +'</div>';
   document.getElementById('questionContents').insertAdjacentHTML('beforeend', choicesContent);
@@ -126,16 +126,20 @@ shuffle(party);
 
 $(function(){
   //ボタンがクリックされた時
-  $("button").cllick(function(){
+  $("button").click(function(){
   //一度結果を非表示にする
   // $(".result").hide();
    
   //問題数を取得
-  var qNum = $("ul li").length;
+  var qNum = questions.length;
+  console.log(qNum);
   // id属性で要素を取得
   var result_element = document.getElementById('result');
   // 新しいHTML要素を作成
-  var new_element = document.createElement('p');
+  let new_element = document.createElement('p');
+
+  console.log(result_element);
+  console.log(new_element);
 
   if( $("ul li input:checked").length < qNum ){
   //全てチェックしていなかったらアラートを出す
@@ -148,33 +152,33 @@ $(function(){
     typeDNum = $(".typeD:checked").length,
     typeENum = $(".typeE:checked").length;
 
-    if( typeANum > typeBNum,typeCNum,typeDNum,typeENum ) {
+    if( typeANum > typeBNum && typeANum > typeCNum && typeANum > typeDNum && typeANum >typeENum ) {
       //もしもAが最も多かったらAタイプをシャッフルしたものの一つ目を表示
-      new_element.textContent = positive[0];
+      new_element.innerText = `${positive[0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
 
-    } else if( typeBNum > typeANum,typeCNum,typeDNum,typeENum ) {
+    } else if( typeBNum > typeANum && typeBNum > typeCNum && typeBNum > typeDNum && typeBNum > typeENum ) {
       //もしもBの方が多かったらBタイプをシャッフルしたものの一つ目を表示
-      new_element.textContent = calm[0];
+      new_element.innerText = `${calm[0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
 
-    }else if( typeBNum > typeANum,typeCNum,typeDNum,typeENum ) {
+    }else if( typeCNum > typeANum && typeCNum > typeBNum && typeCNum > typeDNum && typeCNum > typeENum ) {
       //もしもCの方が多かったらCタイプをシャッフルしたものの一つ目を表示
-      new_element.textContent = intense[0];
+      new_element.innerText = `${intense[0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
 
-    }else if( typeBNum > typeANum,typeCNum,typeDNum,typeENum ) {
+    }else if( typeDNum > typeANum && typeDNum > typeBNum && typeDNum > typeCNum && typeDNum > typeENum ) {
       //もしもDの方が多かったらDタイプをシャッフルしたものの一つ目を表示
-      new_element.textContent = cry[0];
+      new_element.innerText = `${cry[0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
       
-    }else if( typeBNum > typeANum,typeCNum,typeDNum,typeENum ) {
+    }else if( typeENum > typeANum && typeENum > typeBNum && typeENum > typeCNum && typeENum > typeDNum ) {
       //もしもEの方が多かったらEタイプをシャッフルしたものの一つ目を表示
-      new_element.textContent = party[0];
+      new_element.innerText = `${party[0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
     }
