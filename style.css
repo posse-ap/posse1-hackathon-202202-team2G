@@ -1,3 +1,24 @@
+header{
+  background:#DEFFFC;
+  -webkit-animation:colour 10s linear infinite;
+  -moz-animation:colour 10s linear infinite;
+}
+
+header h1{
+  font-family: "Sofia", sans-serif;
+}
+main{
+  /* background-color: #f8dfd2; */
+  background:#DEFFFC;
+  -webkit-animation:colour 10s linear infinite;
+  -moz-animation:colour 10s linear infinite;
+}
+
+main h1{
+  font-family: "Sofia", sans-serif;
+  font-size: 5rem;
+  text-shadow: 0.2rem 0.2rem 0 #c3a400;
+}
 .card {
   width: 44rem; 
   height: 23rem; 
@@ -18,3 +39,68 @@
   line-height: 3.1rem;
   list-style: none;
 }
+
+/* 選択肢の色を変える */
+.change-color {
+  /* cssの優先順位 !importantがないと上の.card ul liの方が優先されて、背景色が変わらない */
+  background-color: royalblue !important;
+}
+/* .answer{
+  text-align: center;
+} */
+
+.song{
+  font-size: 10rem;
+}
+
+
+/* .result{width:300px;
+  　　　　　　　　height:80px;
+  　　　　　　　　background:#ced;
+  　　　　　　　　border:1px solid #a7e;
+} */
+
+footer{
+  background:#DEFFFC;
+  -webkit-animation:colour 10s linear infinite;
+  -moz-animation:colour 10s linear infinite;
+}
+
+.text-center{
+  font-family: 'Oswald', sans-serif;
+}
+
+.Twitter{
+  font-family: 'Oswald', sans-serif;
+}
+@-webkit-keyframes colour{
+  0%{
+    background:#c7e5e2
+  }
+
+  20%{
+    background:#E0F2F9
+  }
+
+  35%{
+    background:#E2E4F6
+  }
+
+  50%{
+    background:#E5D6EA
+  }
+
+  65%{
+    background:#E2E4F6
+  }
+
+  80%{
+    background:#E0F2F9
+  }
+
+  100%{
+    background:#c7e5e2
+  }
+
+}
+

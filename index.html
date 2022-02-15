@@ -8,19 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>Musual</title>
 </head>
 <body>
-    <header class="d-flex justify-content-between p-3">
-        <div class="header-title">
-            <h1 class="fs-1">Musual</h1>
-        </div>
-        <div class="header-subtitle d-flex justify-content-end">
-            <div class="me-2">
-                made by
+    <header id="header">
+        <div class="d-flex justify-content-between p-3 position-fixed w-100">
+            <div class="header-title">
+                <div>日常から音楽を</div>
+                <h1 class="fs-1">Musual</h1>
             </div>
-            <div>
-                <img src="./img/posseLogo.png" alt="" class="w-100 h-50">
+            <div class="header-subtitle d-flex justify-content-end">
+                <div class="me-2">
+                    made by
+                </div>
+                <div>
+                    <img src="./img/posseLogo.png" alt="" class="w-100 h-50">
+                </div>
             </div>
         </div>
     </header>
@@ -29,82 +36,41 @@
             <h1 class="row justify-content-center">Musual</h1>
         </div>
         <div class="question container">
-            <div class="row justify-content-center">
-                <div class="card">
-                    <p>今の天気は？</p>
-                    <ul>
-                        <li input type='button' class="btn" onclick="count1();">晴れ</li>
-                        <li input type='button' class="btn" onclick="count2();">曇り</li>
-                        <li input type='button' class="btn" onclick="count3();">雨</li>
-                        <li input type='button' class="btn" onclick="count4();">雪</li>
-                        <li input type='button' class="btn" onclick="count5();">風</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <p>今着ている服は？</p>
-                    <ul>
-                        <li input type='button' value='button'>赤</li>
-                        <li input type='button' value='button'>白</li>
-                        <li input type='button' value='button'>黄</li>
-                        <li input type='button' value='button'>青</li>
-                        <li input type='button' value='button'>黒</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <p>今飲みたいものは？</p>
-                    <ul>
-                        <li input type='button' value='button'>ポカリスエット</li>
-                        <li input type='button' value='button'>お水</li>
-                        <li input type='button' value='button'>エナジードリンク</li>
-                        <li input type='button' value='button'>お茶・コーヒー</li>
-                        <li input type='button' value='button'>炭酸飲料</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <p>今観たいテレビは？</p>
-                    <ul>
-                        <li input type='button' value='button'>バラエティー</li>
-                        <li input type='button' value='button'>ニュース</li>
-                        <li input type='button' value='button'>お笑い</li>
-                        <li input type='button' value='button'>ドラマ</li>
-                        <li input type='button' value='button'>音楽</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <p>今日の予定は？</p>
-                    <ul>
-                        <li input type='button' value='button'>ショッピング</li>
-                        <li input type='button' value='button'>映画鑑賞</li>
-                        <li input type='button' value='button'>スポーツ</li>
-                        <li input type='button' value='button'>読書</li>
-                        <li input type='button' value='button'>寝る</li>
-                    </ul>
-                </div>
+            <!-- <ul>
+                <li input type='button' class="btn" onclick="count1();">晴れ</li>
+                <li input type='button' class="btn" onclick="count2();">曇り</li>
+                <li input type='button' class="btn" onclick="count3();">雨</li>
+                <li input type='button' class="btn" onclick="count4();">雪</li>
+                <li input type='button' class="btn" onclick="count5();">風</li>
+            </ul> -->
+            <div id="questionContents" class="row justify-content-center">
             </div>
-            <div class="start-button d-flex justify-content-end">
+            <div class="start-button d-flex justify-content-center">
                 <button type="button" class="btn btn-primary mt-2">診断開始</button>
             </div>
         </div>
         <div class="answer">
-            <div>
-                あなたにおすすめの曲は星野源の恋です！
-            </div>
-            <div class="share-button">
+            <p class="text-center">あなたにおすすめの曲は...</p>
+            <p class="text-center">星野源の『恋』</p>
+            <p class="text-center">です！</p>
+        </div>
+            <div class="share-button text-center">
                 <!-- data-related→おすすめのユーザーを表示 -->
                 <!-- https://into-the-program.com/dataset/#datasetdatadata -->
                 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="Musual,POSSE" data-related="posse_program:PosseのTwitterアカウントです" data-size="large" data-show-count="false">Tweet</a>
                 <div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://posse-ap.github.io/posse1-hackathon-202202-team2G/" data-color="default" data-size="large" data-count="false" data-ver="3" style="display: none;"></div>
             </div>
-            <div class="answer-youtube">
+            <div class="answer-youtube text-center">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZeerrnuLi5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </main>
-    <footer class="bg-secondary">
-        <h1 class="text-center">What's POSSE?</h1>
+    <footer >
+        <h1 class="text-center">------------What's POSSE?------------</h1>
         <div class="d-flex row p-3">
             <div class="col-1"></div>
             <div class="introduction col-4">
+            <h1 class="text-center">Click me!</h1>
                 <!-- Button trigger modal -->
                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <img src="./img/IMG_2418-1.JPG" alt="" class="w-100 h-auto">
@@ -174,14 +140,15 @@
             </div>
             <div class="col-2"></div>
             <div class="twitter col-4">
+                <h1 class="Twitter text-center">Twitter</h1>
                 <a class="twitter-timeline" data-width="420" data-height="400"
                     href="https://twitter.com/posse_program?ref_src=twsrc%5Etfw">Tweets by posse_program</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
             </div>
             <div class="col-1"></div>
         </div>
     </footer>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
     <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
