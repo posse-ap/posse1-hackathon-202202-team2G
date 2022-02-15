@@ -39,16 +39,9 @@
             <h1 class="row justify-content-center">Musual</h1>
         </div>
         <div class="question container">
-            <!-- <ul>
-                <li input type='button' class="btn" onclick="count1();">晴れ</li>
-                <li input type='button' class="btn" onclick="count2();">曇り</li>
-                <li input type='button' class="btn" onclick="count3();">雨</li>
-                <li input type='button' class="btn" onclick="count4();">雪</li>
-                <li input type='button' class="btn" onclick="count5();">風</li>
-            </ul> -->
             <div id="questionContents" class="row justify-content-center">
             </div>
-            <div class="start-button d-flex justify-content-center">
+            <div id="startButtonBox" class="start-button d-flex justify-content-center">
                 <button id="diagnosisStartButton" type="button" class="btn btn-primary mt-2 diagnosis-start-button">診断開始</button>
             </div>
         </div>
@@ -56,15 +49,15 @@
             <p class="text-center">あなたにおすすめの曲は...</p>
             <div class="text-center result" id="result"></div>
             <p class="text-center">です！</p>
-            <div class="share-button text-center">
-                <!-- data-related→おすすめのユーザーを表示 -->
-                <!-- https://into-the-program.com/dataset/#datasetdatadata -->
-                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="Musual,POSSE" data-related="posse_program:PosseのTwitterアカウントです" data-size="large" data-show-count="false">Tweet</a>
-                <div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://posse-ap.github.io/posse1-hackathon-202202-team2G/" data-color="default" data-size="large" data-count="false" data-ver="3" style="display: none;"></div>
-            </div>
             <div class="answer-youtube text-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZeerrnuLi5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZeerrnuLi5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+        </div>
+        <div class="share-button text-center">
+            <!-- data-related→おすすめのユーザーを表示 -->
+            <!-- https://into-the-program.com/dataset/#datasetdatadata -->
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="Musual,POSSE" data-related="posse_program:PosseのTwitterアカウントです" data-size="large" data-show-count="false">Tweet</a>
+            <div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://posse-ap.github.io/posse1-hackathon-202202-team2G/" data-color="default" data-size="large" data-count="false" data-ver="3" style="display: none;"></div>
         </div>
     </main>
     <footer >

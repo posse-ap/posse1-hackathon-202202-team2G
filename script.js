@@ -9,6 +9,7 @@ const questions = [
   '今日の予定は？',
 ]
 
+
 // 問題の選択肢の配列
 const choiceSet = [
   ['晴れ', '曇り', '雨', '雪', '風'],
@@ -48,32 +49,33 @@ for(let i = 0; i < questions.length; i++) {
 }
 
 choiceSet.forEach(function(selection, index) {
-for(let l = 0; l < selection.length; l++) {
-  let selected =document.getElementById(`choiced${index+1}-${l+1}`);
-  // 設問重ねる処理
-  let question = document.getElementsByClassName('card');
-  window.onload = question[0].style.display = 'block';
-  // console.log(selected)
-  selected.addEventListener('click', function() {
-    selected.classList.add('change-color');
-    document.getElementById(`choiced${index+1}-1`).style.pointerEvents = "none";
-    document.getElementById(`choiced${index+1}-2`).style.pointerEvents = "none";
-    document.getElementById(`choiced${index+1}-3`).style.pointerEvents = "none";
-    document.getElementById(`choiced${index+1}-4`).style.pointerEvents = "none";
-    document.getElementById(`choiced${index+1}-5`).style.pointerEvents = "none";
+  for(let l = 0; l < selection.length; l++) {
+    let selected =document.getElementById(`choiced${index+1}-${l+1}`);
+    // 設問重ねる処理
+    let question = document.getElementsByClassName('card');
+    window.onload = question[0].style.display = 'block';
+    // console.log(selected)
+    selected.addEventListener('click', function() {
+      selected.classList.add('change-color');
+      document.getElementById(`choiced${index+1}-1`).style.pointerEvents = "none";
+      document.getElementById(`choiced${index+1}-2`).style.pointerEvents = "none";
+      document.getElementById(`choiced${index+1}-3`).style.pointerEvents = "none";
+      document.getElementById(`choiced${index+1}-4`).style.pointerEvents = "none";
+      document.getElementById(`choiced${index+1}-5`).style.pointerEvents = "none";
       setTimeout(() => {
         question[index].style.display = 'none';
         question[index+1].style.display = 'block';
       }, 500);
+    })
+    }
   })
-  }
-})
+  let diagnosisStart = document.getElementById('diagnosisStartButton');
+  let answerBox = document.getElementById('answer');
+  diagnosisStart.addEventListener('click', function() {
+    answerBox.classList.add("showBox");
+  })
 
-let diagnosisStart = document.getElementById('diagnosisStartButton');
-let answerBox = document.getElementById('answer');
-diagnosisStart.addEventListener('click', function() {
-  answerBox.classList.add("showBox");
-})
+
 
 //ジャンルごとの曲名を配列に入れる
 //明るい Aタイプ
@@ -140,24 +142,32 @@ shuffle(party);
 //if文に条件分岐された各々のジャンル先でシャッフル関数発火させる
 
 $(function(){
+  // var diagnosisStart = document.getElementById('#diagnosisStartButton');
+  // $('.diagnosis-start-button').prop('disabled', true);
+  // $('.diagnosis-start-button').hide();
   //ボタンがクリックされた時
-  $("button").click(function(){
-
+  $("#diagnosisStartButton").click(function(){
   //問題数を取得
   var qNum = questions.length;
   // id属性で要素を取得
   var result_element = document.getElementById('result');
   // 新しいHTML要素を作成
   let new_element = document.createElement('p');
-
   // console.log(result_element);
   // console.log(new_element);
-
   if( $("ul li input:checked").length < qNum ){
   //全てチェックしていなかったらアラートを出す
     alert("未回答の問題があります");
   } else {
-  //チェックされているinputの数を取得
+
+    // var diagnosisStart = document.getElementById('#diagnosisStartButton');
+    // $('.diagnosis-start-button').fadeIn();
+    // let diagnosisStart = document.getElementById('diagnosisStartButton');
+    // let answerBox = document.getElementById('#answer');
+    // $('#diagnosisStart').addEventListener('click', function() {
+    //   answerBox.classList.add("showBox");
+    // })
+    //チェックされているinputの数を取得
     var typeANum = $(".typeA:checked").length,
     typeBNum = $(".typeB:checked").length,
     typeCNum = $(".typeC:checked").length,
