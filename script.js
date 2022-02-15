@@ -89,25 +89,25 @@ const positive = [
 
 //落ち着いている Bタイプ
 const calm = [
-  ['enthouse『あなたゆずり』'],
-  ['宇多田ヒカル『Traveling』'],
-  ['Ochunism『グラス』'],
-  ['Billy Joel『Honesty』'],
-  ['槇原敬之『どんなときも』'],
-  ['BTS『The Truth Untold』'],
-  ['제이유나 (J.UNA)『Butterfly (알고있지만, OST』'],
-  ['小田和正『I LOVE YOU』'],
-  ['dodo『era it』'],
-  ['aiko『瞳』'],
-  ['岡崎体育『エクレア』'],
-  ['AAAMYYY『HOME』'],
-  ['Alesia Cara『Scraps to your bautiful』'],
-  ['宮川彬良『ゆうがたクインテットオープニング』']
-  ['kojikoji 『いつかのDAYS』'],
-  ['iri『COME BACK TO MY CITY』']
-  ['King Gnu『サマーレインダイバー』']
-  ['miwa『結』']
-  ['桐谷健太『海の声』']
+  ['Penthouse『あなたゆずり』', 'https://www.youtube.com/embed/8W_UQYDZcSg'],
+  ['宇多田ヒカル『Traveling』', 'https://www.youtube.com/embed/tuyZ9f6mHZk'],
+  ['Ochunism『グラス』', 'https://www.youtube.com/embed/qzImgn0J0EA'],
+  ['Billy Joel『Honesty』', 'https://www.youtube.com/embed/SuFScoO4tb0'],
+  ['槇原敬之『どんなときも』', 'https://www.youtube.com/embed/b88pxLpMZKk'],
+  ['BTS『The Truth Untold』', 'https://www.youtube.com/embed/ITc-om9SVr4'],
+  ['제이유나 (J.UNA)『Butterfly (알고있지만, OST』', 'https://www.youtube.com/embed/wswwusBEU0M'],
+  ['小田和正『I LOVE YOU』', 'https://www.youtube.com/embed/CS7ZMXuq0gk'],
+  ['dodo『era it』', 'https://www.youtube.com/embed/-mlgq7TQ-So'],
+  ['aiko『瞳』', 'https://www.youtube.com/embed/Nyao8QfAuV4'],
+  ['BTS『봄날 (Spring Day)』', 'https://www.youtube.com/embed/xEeFrLSkMm8'],
+  ['AAAMYYY『HOME』', 'https://www.youtube.com/embed/dRcNqex_B_I'],
+  ['Alesia Cara『Scraps to your beautiful』', 'https://www.youtube.com/embed/MWASeaYuHZo'],
+  ['宮川彬良『ゆうがたクインテットオープニング』', 'https://www.youtube.com/embed/qAZClf7zGnc'],
+  ['kojikoji 『いつかのDAYS』', 'https://www.youtube.com/embed/vh9UhWZM5rM'],
+  ['iri『COME BACK TO MY CITY』', 'https://www.youtube.com/embed/5XoZawLfhdc'],
+  ['King Gnu『サマーレインダイバー』', 'https://www.youtube.com/embed/rSxfvGbPqVs'],
+  ['miwa『結』', 'https://www.youtube.com/embed/oTnAK43Ma3k'],
+  ['桐谷健太『海の声』', 'https://www.youtube.com/embed/-zQWavER7to'],
 ];
 
 //激しい Cタイプ
@@ -160,26 +160,26 @@ const cry = [
 
 //パーリー系 Eタイプ
 const party = [
-  ['Awich『Gila Gila』'],
-  ['Penthouse『Jukebox Driver』'],
-  ['TAXI feat. tofubeats『NOA』'],
-  ['RADIO FISH『PERFECT HUMAN』'],
-  ['平井堅『POP STAR』'],
-  ['Suchmos『STAY TUNE』'],
-  ['島谷ひとみ『Perseus-ペルセウス-』'],
-  // ['Zara Larsson『Ain't my fault』'],
-  ['「24K MAGIC」 BY BRUNO MARS'],
-  ['「LOVE ME NOW」BY JOHN LEGEND'],
-  ['「STAY」 BY ZEDD ＆ ALEISSA CARA'],
-  ['「SIDE TO SIDE」 BY ARIANA GRANDE ft. NICKI MINAJ'],
-  ['「THE CURE」 BY LADY GAGA'],
-  // ['「SAY YOU WON'T LET GO」 BY JAMES ARTHUR'],
-  ['「CHAINED TO THE RHYTHM」 BY KATY PERRY ft. SKIP MARLEY'],
-  ['Bebe Rexha『No broken hearts』'],
-  ['Ariana Grande『no tears to cry』'],
-  ['CHAI『N.E.O』'],
-  ['STUTS&松たか子『Presence I』'],
-  ['『Tones And I『Fly Away』']
+  ['Awich『Gila Gila』', 'https://www.youtube.com/embed/nJaFpoo9Fl0'],
+  ['Penthouse『Jukebox Driver』', 'https://www.youtube.com/embed/g3UHU8I3pJY'],
+  ['TAXI feat. tofubeats『NOA』', 'https://www.youtube.com/embed/hl3jOMB6D2s'],
+  ['RADIO FISH『PERFECT HUMAN』', 'https://www.youtube.com/embed/4Bh1nm7Ir8c'],
+  ['平井堅『POP STAR』', 'https://www.youtube.com/embed/WzfteHcskYo'],
+  ['Suchmos『STAY TUNE』', 'https://www.youtube.com/embed/PLgYflfgq0M'],
+  ['島谷ひとみ『Perseus-ペルセウス-』', 'https://www.youtube.com/embed/zj9vPHv52kI'],
+  ["Zara Larsson『Ain't my fault』", 'https://www.youtube.com/embed/eC-F_VZ2T1c'],
+  ['「24K MAGIC」 BY BRUNO MARS', 'https://www.youtube.com/embed/UqyT8IEBkvY'],
+  ['「LOVE ME NOW」BY JOHN LEGEND', 'https://www.youtube.com/embed/NmCFY1oYDeM'],
+  ['「STAY」 BY ZEDD ＆ ALEISSA CARA', '"https://www.youtube.com/embed/yWEK4v9AVKQ'],
+  ['「SIDE TO SIDE」 BY ARIANA GRANDE ft. NICKI MINAJ', 'https://www.youtube.com/embed/SXiSVQZLje8'],
+  ['「THE CURE」 BY LADY GAGA', 'https://www.youtube.com/embed/vp8VZe5kqEM'],
+  ["「SAY YOU WON'T LET GO」 BY JAMES ARTHUR",'https://www.youtube.com/embed/0yW7w8F2TVA' ],
+  ['「CHAINED TO THE RHYTHM」 BY KATY PERRY ft. SKIP MARLEY', 'https://www.youtube.com/embed/Um7pMggPnug'],
+  ['Bebe Rexha『No broken hearts』', 'https://www.youtube.com/embed/XoiEkEuCWog'],
+  ['Ariana Grande『no tears to cry』', 'https://www.youtube.com/embed/ffxKSjUwKdU'],
+  ['CHAI『N.E.O』', 'https://www.youtube.com/embed/YMGf3zyhG94'],
+  ['STUTS&松たか子『Presence I』', 'https://www.youtube.com/embed/IRDoeQZ12-Y'],
+  ['『Tones And I『Fly Away』', 'https://www.youtube.com/embed/R0vu5QfsD5E'],
 ];
 
 
