@@ -78,30 +78,26 @@ diagnosisStart.addEventListener('click', function() {
 //ジャンルごとの曲名を配列に入れる
 //明るい Aタイプ
 const positive = [
-  ['C&K 『ドラマ』'],
-  ['Penthouse『...恋に落ちたら』'],
-  ['乃木坂46『ざぶんざざぶん』'],
-  ['乃木坂46『ファンタスティック三食パン』'],
-  ['ベリーグッドマン『ハイライト』'],
-  ['Twice『FANCY』'],
-  ['Official髭男dism『I LOVE』'],
-  ['YMO『君に、胸キュン。』'],
-  ['YMO『ライディーン』'],
-  ['MISIA『THE GLORY DAY』'],
-  ['ケルティック・ウーマン 『You Raise Me Up』'],
-  ['藤原さくら『かわいい』'],
-  ['GOT the beat『Step Back』'],
-  ['BENEE『Glitter』'],
-  ['Anne-Marrie『2002』'],
-  ['藤井風『燃えよ』'],
-  ['岡本真夜『アララの呪文』'],
-  ['おジャ魔女どれみ オープニング『おジャ魔女カーニバル!!』'],
-  ['ＧＯ-ＧＯ たまごっち！『たまごっち! オープニング主題歌』'],
-  ['緑黄色社会『キャラクター』']
   ['C&K 『ドラマ』','https://www.youtube.com/embed/NszvNJe0a84'],
-  ['Penthouse『...恋に落ちたら』','https://www.youtube.com/watch?v=4TLlnTKeEqI'],
-  ['乃木坂46『ざぶんざざぶん』','https://www.youtube.com/watch?v=wOx5oAbzKKs'],
-  ['乃木坂46『ファンタスティック三食パン』','https://www.youtube.com/watch?v=0mx5q66rwuI'],
+  ['Penthouse『...恋に落ちたら』','https://www.youtube.com/embed/4TLlnTKeEqI'],
+  ['乃木坂46『ざぶんざざぶん』','https://www.youtube.com/embed/wOx5oAbzKKs'],
+  ['乃木坂46『ファンタスティック三食パン』','https://www.youtube.com/embed/0mx5q66rwuI'],
+  ['ベリーグッドマン『ハイライト』',"https://www.youtube.com/embed/CSwUEGFroDg"],
+  ['Twice『FANCY』',"https://www.youtube.com/embed/kOHB85vDuow"],
+  ['Official髭男dism『I LOVE』',"https://www.youtube.com/embed/bt8wNQJaKAk"],
+  ['YMO『君に、胸キュン。』',"https://www.youtube.com/embed/24bRSUeITXc"],
+  ['YELLOW MAGIC ORCHESTRA『RYDEEN』',"https://www.youtube.com/embed/nB5g2cUM2FQ"],
+  ['MISIA『THE GLORY DAY』',"https://www.youtube.com/embed/Ecv7tI03kJY"],
+  ['Celtic Woman 『You Raise Me Up』',"https://www.youtube.com/embed/Yfwlj0gba_k" ],
+  ['藤原さくら『かわいい』',"https://www.youtube.com/embed/bSd2Xnx6GtM"],
+  ['GOT the beat『Step Back』',"https://www.youtube.com/embed/Eq1_WPnzvKw"],
+  ['BENEE『Glitter』',"https://www.youtube.com/embed/D3gmU0GOTXI"],
+  ['Anne-Marrie『2002』',"https://www.youtube.com/embed/Il-an3K9pjg"],
+  ['藤井風『燃えよ』',"https://www.youtube.com/embed/FNCfUdZlAKc"],
+  ['岡本真夜『アララの呪文』',"https://www.youtube.com/embed/RGyTLYU7O_g"],
+  ['おジャ魔女どれみ オープニング『おジャ魔女カーニバル!!』',"https://www.youtube.com/embed/gM5yKQfdlk8"],
+  ['ＧＯ-ＧＯ たまごっち！『たまごっち! オープニング主題歌』',"https://www.youtube.com/embed/w2-AKWQsRIA"],
+  ['緑黄色社会『キャラクター』',"https://www.youtube.com/embed/ulforNn47PM"]
 ];
 
 //落ち着いている Bタイプ
@@ -153,26 +149,26 @@ const intense = [
 
 //泣ける Dタイプ
 const cry = [
-  ['日向坂46『まさか偶然…」'],
-  ['乃木坂46『猫舌カモミールティー』'],
-  ['Anly『カラノココロ』'],
-  ['川嶋あい『旅立ちの日に・・・』']
-  ['槇原敬之『もう恋なんてしない』']
-  ['Charlie Puth『We Don’t Talk Anymore』']
-  ['Lauv - changes']
-  ['ONE OK ROCK『Wasted Nights』']
-  ['back number『水平線』']
-  ['米津玄師『アイネクライネ』']
-  ['小田和正『緑の日々』']
-  ['大澤誉志幸『そして僕は途方に暮れる』']
-  ['斉藤由貴『卒業』']
-  ['島谷ひとみ『春待人/Camellia-カメリア-』']
-  ['島谷ひとみ『恋の雫』']
-  ['mom『マスク』']
-  ['Bon Iver『iMi』']
-  ['Tempalay『革命前夜』']
-  ['秋川雅史『千の風になって』']
-  ['星野源feat.PUNPEE『さらしもの』']
+  ['日向坂46『まさか偶然…」','https://www.youtube.com/embed/WoaDD6ZWo78'],
+  ['乃木坂46『猫舌カモミールティー』','https://www.youtube.com/embed/dIqN5XgIhFQ'],
+  ['Anly『カラノココロ』','https://www.youtube.com/embed/rtLbtquPkUo'],
+  ['川嶋あい『旅立ちの日に・・・』','https://www.youtube.com/embed/DlO308doIyU'],
+  ['槇原敬之『もう恋なんてしない』','https://www.youtube.com/embed/naz0-szzYXk'],
+  ['Charlie Puth『We Don’t Talk Anymore』','https://www.youtube.com/embed/3AtDnEC4zak"'],
+  ['Lauv『changes』','https://www.youtube.com/embed/pPAAFMtDUzo'],
+  ['ONE OK ROCK『Wasted Nights』','https://www.youtube.com/embed/2M3jN5VTsIY'],
+  ['back number『水平線』','https://www.youtube.com/embed/iqEr3P78fz8'],
+  ['米津玄師『アイネクライネ』','https://www.youtube.com/embed/-EKxzId_Sj4'],
+  ['小田和正『緑の日々』','https://www.youtube.com/embed/64Ki7h3lz4A'],
+  ['大澤誉志幸『そして僕は途方に暮れる』','https://www.youtube.com/embed/Re8l4a48R70'],
+  ['斉藤由貴『卒業』','https://www.youtube.com/embed/oSqTaVzqPIk'],
+  ['島谷ひとみ『春待人/Camellia-カメリア-』','https://www.youtube.com/embed/dzx35IEGNu8'],
+  ['島谷ひとみ『恋の雫』','https://www.youtube.com/embed/eyPwgabpCWg'],
+  ['mom『マスク』','https://www.youtube.com/embed/-DQKXxYsWDE'],
+  ['Bon Iver『iMi』','https://www.youtube.com/embed/htyVjHr2_m8'],
+  ['Tempalay『革命前夜』','https://www.youtube.com/embed/219q3PhaYuE'],
+  ['秋川雅史『千の風になって』','https://www.youtube.com/embed/yqzCwcL9xDc'],
+  ['星野源feat.PUNPEE『さらしもの』','https://www.youtube.com/embed/H6QFLov4WUA']
 ];
 
 //パーリー系 Eタイプ
