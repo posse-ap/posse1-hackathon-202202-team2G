@@ -231,7 +231,6 @@ $(function(){
     typeCNum = $(".typeC:checked").length,
     typeDNum = $(".typeD:checked").length,
     typeENum = $(".typeE:checked").length;
-  // }
   if( typeANum < 0 && typeBNum < 0 && typeCNum < 0 && typeDNum < 0 && typeENum < 0) {
     let answerBox = document.getElementById('answer');
     answerBox.classList.remove("showBox");
@@ -247,7 +246,8 @@ $(function(){
       let answerBox = document.getElementById('answer');
       // diagnosisStart.addEventListener('click', function() {
       answerBox.classList.add("showBox");
-      diagnosisStart.style.pointerEvents= "none";
+      // diagnosisStart.style.pointerEvents= "none";
+      diagnosisStart.classList.add('no-more-click');
       // });
       // 診断開始ボタンを押せないようにする
       // let diagnosisStart = document.getElementById('diagnosisStartButton');
@@ -268,7 +268,7 @@ $(function(){
       answerBox.classList.add("showBox");
             // 診断開始ボタンを押せないようにする
       // diagnosisStart.style.pointerEvents= "none";
-
+      diagnosisStart.classList.add('no-more-click');
       // });
       let new_url = 
       `<iframe height="315" src=${calm[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
@@ -285,8 +285,8 @@ $(function(){
       // diagnosisStart.addEventListener('click', function() {
       answerBox.classList.add("showBox");
             // 診断開始ボタンを押せないようにする
-      diagnosisStart.style.pointerEvents= "none";
-
+      // diagnosisStart.style.pointerEvents= "none";
+      diagnosisStart.classList.add('no-more-click');
       // });
       let new_url = 
       `<iframe height="315" src=${intense[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
@@ -303,8 +303,10 @@ $(function(){
       // diagnosisStart.addEventListener('click', function() {
       answerBox.classList.add("showBox");
             // 診断開始ボタンを押せないようにする
-            diagnosisStart.style.pointerEvents= "none";
+            // diagnosisStart.style.pointerEvents= "none";
       // });
+      diagnosisStart.classList.add('no-more-click');
+
       let new_url = 
       `<iframe height="315" src=${cry[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
@@ -320,8 +322,8 @@ $(function(){
       // diagnosisStart.addEventListener('click', function() {
       answerBox.classList.add("showBox");
             // 診断開始ボタンを押せないようにする
-            diagnosisStart.style.pointerEvents= "none";
-
+            // diagnosisStart.style.pointerEvents= "none";
+            diagnosisStart.classList.add('no-more-click');
       // });
       let new_url = 
       `<iframe height="315" src=${party[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
@@ -343,7 +345,8 @@ $(function(){
       // diagnosisStart.addEventListener('click', function() {
       answerBox.classList.add("showBox");
             // 診断開始ボタンを押せないようにする
-      diagnosisStart.style.pointerEvents= "none";
+      // diagnosisStart.style.pointerEvents= "none";
+      diagnosisStart.classList.add('no-more-click');
 
       // });
       let new_url = 
