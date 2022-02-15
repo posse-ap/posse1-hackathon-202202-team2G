@@ -18,6 +18,11 @@ header h1{
   height: 50%;
 }
 
+.header-subtitle{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Shippori Mincho', serif;
+}
+
 main{
   /* background-color: #f8dfd2; */
   background:#DEFFFC;
