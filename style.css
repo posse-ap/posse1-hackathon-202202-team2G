@@ -50,6 +50,16 @@ main h1{
   line-height: 3.1rem;
   list-style: none;
 }
+input[type=checkbox] {
+  display: none; /* チェックボックス□を非表示にする */
+}
+label {
+  width: 100%; /* 適用範囲をliタグ内全てにさせる */
+}
+/* チェックボックスのマウスポインタの形状変える */
+label, input[type='checkbox'] {
+  cursor: pointer;
+}
 
 /* 診断開始ボタン */
 .diagnosis-start-button {
