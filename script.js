@@ -122,24 +122,20 @@ shuffle(party);
 //どの値がチェックされたかをカウントする
 //カウントされた値の合計値を基に条件分岐
 //if文に条件分岐された各々のジャンル先でシャッフル関数発火させる
-//もしもどこのジャンルにも属さない場合、５つのジャンルを１つの配列に入れ、その配列をシャッフルするように出力する（else文)
 
 $(function(){
   //ボタンがクリックされた時
   $("button").click(function(){
-  //一度結果を非表示にする
-  // $(".result").hide();
    
   //問題数を取得
   var qNum = questions.length;
-  console.log(qNum);
   // id属性で要素を取得
   var result_element = document.getElementById('result');
   // 新しいHTML要素を作成
   let new_element = document.createElement('p');
 
-  console.log(result_element);
-  console.log(new_element);
+  // console.log(result_element);
+  // console.log(new_element);
 
   if( $("ul li input:checked").length < qNum ){
   //全てチェックしていなかったらアラートを出す
@@ -181,49 +177,23 @@ $(function(){
       new_element.innerText = `${party[0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
+
+    }else {
+      //どこのジャンルにも属さない場合
+      //５つのジャンルを１つの配列に入れる
+      var all = [];
+      all.push(positive);
+      all.push(calm);
+      all.push(intense);
+      all.push(cry);
+      all.push(party);
+      //その配列をシャッフルする
+      shuffle(all);
+      //一つ目を表示
+      new_element.innerText = `${all[0]}`;
+      // 指定した要素の中の末尾に挿入
+      result_element.appendChild(new_element);
     }
   }
   });
   });
-// let thisCount2 = 0;
-// let thisCount3 = 0;
-// let thisCount4 = 0;
-// let thisCount5 = 0;
-// function count(number){
-//      let thisCount1 = thisCount + number;
-//       thisCount1 = thisCount1 + 1;
-// }
-// function count1(){
-//       thisCount1 = thisCount1 + 1;
-// }
-// function count2(){
-//       thisCount2 = thisCount2 + 1;
-// }
-// function count3(){
-//       thisCount3 = thisCount3 + 1;
-// }
-// function count4(){
-//       thisCount4 = thisCount4 + 1;
-// }
-// function count5(){
-//       thisCount5 = thisCount5 + 1;
-// }
-// // window.onload = count1();
-
-// for(let l = 0; l < selection.length; l++) {
-//   let selected =document.getElementById(`choiced${index+1}-${l+1}`);
-//   // console.log(selected)
-//   selected.addEventListener('click', function() {
-//     selected.classList.add('change-color');
-//     document.getElementById(`choiced${index+1}-1`).count1();
-//     document.getElementById(`choiced${index+1}-2`).count2();
-//     document.getElementById(`choiced${index+1}-3`).count3();
-//     document.getElementById(`choiced${index+1}-4`).count4();
-//     document.getElementById(`choiced${index+1}-5`).count5();
-//   })}
-
-// console.log(thisCount1);
-// console.log(thisCount2);
-// console.log(thisCount3);
-// console.log(thisCount4);
-// console.log(thisCount5);
