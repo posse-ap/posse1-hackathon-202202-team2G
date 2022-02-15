@@ -98,6 +98,10 @@ const positive = [
   ['おジャ魔女どれみ オープニング『おジャ魔女カーニバル!!』'],
   ['ＧＯ-ＧＯ たまごっち！『たまごっち! オープニング主題歌』'],
   ['緑黄色社会『キャラクター』']
+  ['C&K 『ドラマ』','https://www.youtube.com/embed/NszvNJe0a84'],
+  ['Penthouse『...恋に落ちたら』','https://www.youtube.com/watch?v=4TLlnTKeEqI'],
+  ['乃木坂46『ざぶんざざぶん』','https://www.youtube.com/watch?v=wOx5oAbzKKs'],
+  ['乃木坂46『ファンタスティック三食パン』','https://www.youtube.com/watch?v=0mx5q66rwuI'],
 ];
 
 //落ち着いている Bタイプ
@@ -210,13 +214,11 @@ shuffle(intense);
 shuffle(cry);
 shuffle(party);
 // console.log(positive);
-// console.log(positive[0]);
+// console.log(positive[0][1]);//配列からurlを取得
 // console.log(calm);
 // console.log(intense);
 // console.log(cry);
 // console.log(party);
-
-
 
 
 
@@ -251,33 +253,58 @@ $(function(){
 
     if( typeANum > typeBNum && typeANum > typeCNum && typeANum > typeDNum && typeANum >typeENum ) {
       //もしもAが最も多かったらAタイプをシャッフルしたものの一つ目を表示
-      new_element.innerText = `${positive[0]}`;
+      new_element.innerText = `${positive[0][0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
+
+      let new_url = 
+      `<iframe width="560" height="315" src=${positive[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      +' </iframe>';
+      document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
 
     } else if( typeBNum > typeANum && typeBNum > typeCNum && typeBNum > typeDNum && typeBNum > typeENum ) {
       //もしもBの方が多かったらBタイプをシャッフルしたものの一つ目を表示
-      new_element.innerText = `${calm[0]}`;
+      new_element.innerText = `${calm[0][0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
+
+      let new_url = 
+      `<iframe width="560" height="315" src=${calm[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      +' </iframe>';
+      document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
 
     }else if( typeCNum > typeANum && typeCNum > typeBNum && typeCNum > typeDNum && typeCNum > typeENum ) {
       //もしもCの方が多かったらCタイプをシャッフルしたものの一つ目を表示
-      new_element.innerText = `${intense[0]}`;
+      new_element.innerText = `${intense[0][0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
 
+      let new_url = 
+      `<iframe width="560" height="315" src=${intense[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      +' </iframe>';
+      document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
+
     }else if( typeDNum > typeANum && typeDNum > typeBNum && typeDNum > typeCNum && typeDNum > typeENum ) {
       //もしもDの方が多かったらDタイプをシャッフルしたものの一つ目を表示
-      new_element.innerText = `${cry[0]}`;
+      new_element.innerText = `${cry[0][0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
-      
+
+      let new_url = 
+      `<iframe width="560" height="315" src=${cry[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      +' </iframe>';
+      document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
+
     }else if( typeENum > typeANum && typeENum > typeBNum && typeENum > typeCNum && typeENum > typeDNum ) {
       //もしもEの方が多かったらEタイプをシャッフルしたものの一つ目を表示
-      new_element.innerText = `${party[0]}`;
+      new_element.innerText = `${party[0][0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
+
+      let new_url = 
+      `<iframe width="560" height="315" src=${party[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      +' </iframe>';
+      document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
 
     }else {
       //どこのジャンルにも属さない場合
@@ -286,10 +313,40 @@ $(function(){
       //その配列をシャッフルする
       shuffle(all);
       //一つ目を表示
-      new_element.innerText = `${all[0]}`;
+      new_element.innerText = `${all[0][0]}`;
       // 指定した要素の中の末尾に挿入
       result_element.appendChild(new_element);
+
+      let new_url = 
+      `<iframe width="560" height="315" src=${all[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      +' </iframe>';
+      document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
     }
   }
   });
   });
+  // <iframe width="560" height="315" src=`${party[0][1]}` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  // </iframe>
+
+
+  // let new_url = 
+  // `<iframe width="560" height="315" src=${party[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+  // +' </iframe>';
+  // document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
+ 
+
+
+
+
+
+// // id属性で要素を取得
+// var result_url = document.getElementById('url');
+// // 新しいHTML要素を作成
+// let new_url = document.createElement('iframe');
+// new_url.style.width = "560";
+// new_url.style.height = "315";
+
+// // 選ばれた配列のURLを取得してそれを入れる
+// new_url.src = `${party[0][1]}`;
+// // 指定した要素の中の末尾に挿入
+// result_url.appendChild(new_url);
