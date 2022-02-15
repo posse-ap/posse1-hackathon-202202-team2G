@@ -18,19 +18,6 @@ const choiceSet = [
   ['ショッピング', '映画鑑賞', 'スポーツ', '読書', '寝る'],
 ]
 
-// for(let i = 0; i < questions.length; i++) {
-//   var choicesContent = 
-//   '<div class="card">'
-//   + `<p>${questions[i]}</p>`
-//   + '<ul>';
-//     choiceSet.forEach(function(selection) {
-//       for(let k = 0; k < selection.length; k++) {
-//         choicesContent += `<li id="choice-${k+1}-${k + 1}" input type = "button" value = "button">${selection[k]}</li>`;
-//       }});
-//   choicesContent += '</ul>';
-//   document.getElementById('questionContents').insertAdjacentHTML('afterbegin', choicesContent);
-// };
-
 for(let i = 0; i < questions.length; i++) {
   let choicesContent = 
   '<div class="card">'
@@ -233,9 +220,6 @@ $(function(){
   // 新しいHTML要素を作成
   let new_element = document.createElement('p');
 
-  // console.log(result_element);
-  // console.log(new_element);
-
   if( $("ul li input:checked").length < qNum ){
   //全てチェックしていなかったらアラートを出す
     alert("未回答の問題があります");
@@ -254,7 +238,7 @@ $(function(){
       result_element.appendChild(new_element);
 
       let new_url = 
-      `<iframe width="560" height="315" src=${positive[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      `<iframe height="315" src=${positive[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
       document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
 
@@ -265,7 +249,7 @@ $(function(){
       result_element.appendChild(new_element);
 
       let new_url = 
-      `<iframe width="560" height="315" src=${calm[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      `<iframe height="315" src=${calm[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
       document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
 
@@ -276,7 +260,7 @@ $(function(){
       result_element.appendChild(new_element);
 
       let new_url = 
-      `<iframe width="560" height="315" src=${intense[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      `<iframe height="315" src=${intense[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
       document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
 
@@ -287,7 +271,7 @@ $(function(){
       result_element.appendChild(new_element);
 
       let new_url = 
-      `<iframe width="560" height="315" src=${cry[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      `<iframe height="315" src=${cry[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
       document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
 
@@ -298,7 +282,7 @@ $(function(){
       result_element.appendChild(new_element);
 
       let new_url = 
-      `<iframe width="560" height="315" src=${party[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      `<iframe height="315" src=${party[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
       document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
 
@@ -314,35 +298,10 @@ $(function(){
       result_element.appendChild(new_element);
 
       let new_url = 
-      `<iframe width="560" height="315" src=${all[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
+      `<iframe height="315" src=${all[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
       document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
     }
   }
   });
   });
-  // <iframe width="560" height="315" src=`${party[0][1]}` title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-  // </iframe>
-
-
-  // let new_url = 
-  // `<iframe width="560" height="315" src=${party[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
-  // +' </iframe>';
-  // document.getElementById('url').insertAdjacentHTML('beforeend', new_url);
- 
-
-
-
-
-
-// // id属性で要素を取得
-// var result_url = document.getElementById('url');
-// // 新しいHTML要素を作成
-// let new_url = document.createElement('iframe');
-// new_url.style.width = "560";
-// new_url.style.height = "315";
-
-// // 選ばれた配列のURLを取得してそれを入れる
-// new_url.src = `${party[0][1]}`;
-// // 指定した要素の中の末尾に挿入
-// result_url.appendChild(new_url);
