@@ -149,26 +149,26 @@ const intense = [
 
 //泣ける Dタイプ
 const cry = [
-  ['日向坂46『まさか偶然…」'],
-  ['乃木坂46『猫舌カモミールティー』'],
-  ['Anly『カラノココロ』'],
-  ['川嶋あい『旅立ちの日に・・・』']
-  ['槇原敬之『もう恋なんてしない』']
-  ['Charlie Puth『We Don’t Talk Anymore』']
-  ['Lauv - changes']
-  ['ONE OK ROCK『Wasted Nights』']
-  ['back number『水平線』']
-  ['米津玄師『アイネクライネ』']
-  ['小田和正『緑の日々』']
-  ['大澤誉志幸『そして僕は途方に暮れる』']
-  ['斉藤由貴『卒業』']
-  ['島谷ひとみ『春待人/Camellia-カメリア-』']
-  ['島谷ひとみ『恋の雫』']
-  ['mom『マスク』']
-  ['Bon Iver『iMi』']
-  ['Tempalay『革命前夜』']
-  ['秋川雅史『千の風になって』']
-  ['星野源feat.PUNPEE『さらしもの』']
+  ['日向坂46『まさか偶然…」','https://www.youtube.com/embed/WoaDD6ZWo78'],
+  ['乃木坂46『猫舌カモミールティー』','https://www.youtube.com/embed/dIqN5XgIhFQ'],
+  ['Anly『カラノココロ』','https://www.youtube.com/embed/rtLbtquPkUo'],
+  ['川嶋あい『旅立ちの日に・・・』','https://www.youtube.com/embed/DlO308doIyU'],
+  ['槇原敬之『もう恋なんてしない』','https://www.youtube.com/embed/naz0-szzYXk'],
+  ['Charlie Puth『We Don’t Talk Anymore』','https://www.youtube.com/embed/3AtDnEC4zak"'],
+  ['Lauv『changes』','https://www.youtube.com/embed/pPAAFMtDUzo'],
+  ['ONE OK ROCK『Wasted Nights』','https://www.youtube.com/embed/2M3jN5VTsIY'],
+  ['back number『水平線』','https://www.youtube.com/embed/iqEr3P78fz8'],
+  ['米津玄師『アイネクライネ』','https://www.youtube.com/embed/-EKxzId_Sj4'],
+  ['小田和正『緑の日々』','https://www.youtube.com/embed/64Ki7h3lz4A'],
+  ['大澤誉志幸『そして僕は途方に暮れる』','https://www.youtube.com/embed/Re8l4a48R70'],
+  ['斉藤由貴『卒業』','https://www.youtube.com/embed/oSqTaVzqPIk'],
+  ['島谷ひとみ『春待人/Camellia-カメリア-』','https://www.youtube.com/embed/dzx35IEGNu8'],
+  ['島谷ひとみ『恋の雫』','https://www.youtube.com/embed/eyPwgabpCWg'],
+  ['mom『マスク』','https://www.youtube.com/embed/-DQKXxYsWDE'],
+  ['Bon Iver『iMi』','https://www.youtube.com/embed/htyVjHr2_m8'],
+  ['Tempalay『革命前夜』','https://www.youtube.com/embed/219q3PhaYuE'],
+  ['秋川雅史『千の風になって』','https://www.youtube.com/embed/yqzCwcL9xDc'],
+  ['星野源feat.PUNPEE『さらしもの』','https://www.youtube.com/embed/H6QFLov4WUA']
 ];
 
 //パーリー系 Eタイプ
