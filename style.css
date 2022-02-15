@@ -52,9 +52,14 @@ main h1{
 }
 
 /* 診断開始ボタン */
-.diagnosis-start-button {
-  /* display: none; */
+.diagnosis-start-button:hover {
+  cursor: pointer;
 }
+/* .diagnosis-start-button {
+  transform: scale(3.0);
+  transition-duration: 0.3s;
+} */
+
 
 
 /* 選択肢の色を変える */

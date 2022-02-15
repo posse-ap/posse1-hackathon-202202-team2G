@@ -72,6 +72,7 @@ for(let l = 0; l < selection.length; l++) {
 let diagnosisStart = document.getElementById('diagnosisStartButton');
 let answerBox = document.getElementById('answer');
 diagnosisStart.addEventListener('click', function() {
+  console.l
   answerBox.classList.add("showBox");
 })
 
@@ -197,10 +198,14 @@ $(function(){
     }else {
       //どこのジャンルにも属さない場合
       //５つのジャンルを１つの配列に入れる
-      var all = positive.concat(calm,intense,cry,party);
+      var all = [];
+      all.push(positive);
+      all.push(calm);
+      all.push(intense);
+      all.push(cry);
+      all.push(party);
       //その配列をシャッフルする
       shuffle(all);
-      console.log(all);
       //一つ目を表示
       new_element.innerText = `${all[0]}`;
       // 指定した要素の中の末尾に挿入
