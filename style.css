@@ -100,6 +100,9 @@ h3{
 .Twitter{
   font-family: 'Oswald', sans-serif;
 }
+.modal-body{
+  display: flex;
+}
 
 @-webkit-keyframes colour{
   0%{
@@ -135,6 +138,12 @@ h3{
   .header{ position: static;}
   .header-subtitle img{
     width: 50%;
+  }
+  .modal-body{
+    display: block;
+  }
+  .modal-pic{
+    margin-top: 1rem;
   }
   
 }
