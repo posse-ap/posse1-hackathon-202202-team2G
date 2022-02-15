@@ -196,11 +196,10 @@ $(function(){
 
     }else {
       //どこのジャンルにも属さない場合
-      //５つのジャンルを１つの配列に入れる
+      //５つのジャンルを１つの配列に結合
       var all = positive.concat(calm,intense,cry,party);
       //その配列をシャッフルする
       shuffle(all);
-      console.log(all);
       //一つ目を表示
       new_element.innerText = `${all[0]}`;
       // 指定した要素の中の末尾に挿入
