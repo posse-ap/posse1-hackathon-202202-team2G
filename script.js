@@ -33,7 +33,7 @@ for(let i = 0; i < questions.length; i++) {
   document.getElementById('questionContents').insertAdjacentHTML('beforeend', choicesContent);
   // afterbeginにすると5問目から始まる
 }
-
+const number = --questions.length;
 choiceSet.forEach(function(selection, index) {
 for(let l = 0; l < selection.length; l++) {
   let selected =document.getElementById(`choiced${index+1}-${l+1}`);
@@ -48,10 +48,16 @@ for(let l = 0; l < selection.length; l++) {
     document.getElementById(`choiced${index+1}-3`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-4`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-5`).style.pointerEvents = "none";
+    if(index < number) {
       setTimeout(() => {
         question[index].style.display = 'none';
         question[index+1].style.display = 'block';
       }, 500);
+    } else {
+      setTimeout(() => {
+      question[index].style.display = 'none';
+    }, 500);
+    }
   })
   }
 })
