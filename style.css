@@ -6,6 +6,16 @@ header{
 
 header h1{
   font-family: "Sofia", sans-serif;
+  width: 100%;
+}
+.header{
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+}
+.header-img{
+  width: 100%;
+  height: 50%;
 }
 main{
   /* background-color: #f8dfd2; */
@@ -32,7 +42,6 @@ main h1{
   text-align: center;
   margin: 0.6rem;
   border:1px solid #ebebeb; 
-  width:37rem; 
   height: 3.1rem; 
   font-weight: bold; 
   background-color: #ffffff; 
@@ -84,6 +93,7 @@ h3{
 .Twitter{
   font-family: 'Oswald', sans-serif;
 }
+
 @-webkit-keyframes colour{
   0%{
     background:#c7e5e2
@@ -114,4 +124,10 @@ h3{
   }
 
 }
-
+@media screen and (max-width: 1200px) {
+  .header{ position: static;}
+  .header-subtitle img{
+    width: 50%;
+  }
+  
+}
