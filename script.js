@@ -4,7 +4,7 @@
 const questions = [
   '今の天気は？',
   '今着ている服は？',
-  '今の見たいものは？',
+  '今飲みたいものは？',
   '今観たいテレビは？',
   '今日の予定は？',
 ]
@@ -18,6 +18,7 @@ const choiceSet = [
   ['ショッピング', '映画鑑賞', 'スポーツ', '読書', '寝る'],
 ]
 
+//各問の選択肢をループで表示
 for(let i = 0; i < questions.length; i++) {
   let choicesContent = 
   '<div class="card">'
@@ -33,6 +34,8 @@ for(let i = 0; i < questions.length; i++) {
   document.getElementById('questionContents').insertAdjacentHTML('beforeend', choicesContent);
   // afterbeginにすると5問目から始まる
 }
+
+//全て設問に答えるまで診断開始ボタンをクリックしても機能しないようにする
 const number = --questions.length;
 choiceSet.forEach(function(selection, index) {
 for(let l = 0; l < selection.length; l++) {
@@ -40,15 +43,20 @@ for(let l = 0; l < selection.length; l++) {
   // 設問重ねる処理
   let question = document.getElementsByClassName('card');
   window.onload = question[0].style.display = 'block';
-  // console.log(selected)
+
+  // 選択肢クリック時
   selected.addEventListener('click', function() {
+    //選択肢ボタンの色が変化
     selected.classList.add('change-color');
+    //他の選択肢ボタンのクリック無効
     document.getElementById(`choiced${index+1}-1`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-2`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-3`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-4`).style.pointerEvents = "none";
     document.getElementById(`choiced${index+1}-5`).style.pointerEvents = "none";
+    //4問目までは次の問題へ切り替わるように、5問目に来たら次の問題はないのでそこで設問終わるように
     if(index < number) {
+      //setTimeout()で次の問題に移る時差を出す。無いとすぐに切り替わって何が起こったか分からなくなる
       setTimeout(() => {
         question[index].style.display = 'none';
         question[index+1].style.display = 'block';
@@ -62,13 +70,8 @@ for(let l = 0; l < selection.length; l++) {
   }
 })
 
-// let diagnosisStart = document.getElementById('diagnosisStartButton');
-// let answerBox = document.getElementById('answer');
-// diagnosisStart.addEventListener('click', function() {
-//   answerBox.classList.add("showBox");
-// })
 
-//ジャンルごとの曲名を配列に入れる
+//製作者側で決めたジャンルごとの曲名を配列に入れる
 //明るい Aタイプ
 const positive = [
   ['C&K 『ドラマ』','https://www.youtube.com/embed/NszvNJe0a84'],
@@ -210,11 +213,7 @@ shuffle(party);
 // console.log(party);
 
 
-
-//どの値がチェックされたかをカウントする
-//カウントされた値の合計値を基に条件分岐
-//if文に条件分岐された各々のジャンル先でシャッフル関数発火させる
-
+//以下、タイプ別のボタンクリック数に応じてジャンル先を決め、シャッフル関数発火させる
 $(function(){
   //ボタンがクリックされた時
   $("#diagnosisStartButton").click(function(){
@@ -242,7 +241,7 @@ $(function(){
     answerBox.classList.remove("showBox");
   }
 
-
+  //以下チェックの数が多いタイプを分岐させ、各々のジャンル先でシャッフル関数発火させる
     if( typeANum > typeBNum && typeANum > typeCNum && typeANum > typeDNum && typeANum >typeENum ) {
       //もしもAが最も多かったらAタイプをシャッフルしたものの一つ目を表示
       new_element.innerText = `${positive[0][0]}`;
@@ -250,14 +249,10 @@ $(function(){
       result_element.appendChild(new_element);
       let diagnosisStart = document.getElementById('diagnosisStartButton');
       let answerBox = document.getElementById('answer');
-      // diagnosisStart.addEventListener('click', function() {
+      // 結果表示
       answerBox.classList.add("showBox");
-      // diagnosisStart.style.pointerEvents= "none";
       diagnosisStart.classList.add('no-more-click');
-      // });
-      // 診断開始ボタンを押せないようにする
-      // let diagnosisStart = document.getElementById('diagnosisStartButton');
-
+      // 結果の曲名のYouTubeのURLを反映させ表示
       let new_url = 
       `<iframe height="315" src=${positive[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
@@ -270,12 +265,10 @@ $(function(){
       result_element.appendChild(new_element);
       let diagnosisStart = document.getElementById('diagnosisStartButton');
       let answerBox = document.getElementById('answer');
-      // diagnosisStart.addEventListener('click', function() {
+      // 結果表示
       answerBox.classList.add("showBox");
-            // 診断開始ボタンを押せないようにする
-      // diagnosisStart.style.pointerEvents= "none";
       diagnosisStart.classList.add('no-more-click');
-      // });
+      // 結果の曲名のYouTubeのURLを反映させ表示
       let new_url = 
       `<iframe height="315" src=${calm[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
@@ -288,12 +281,10 @@ $(function(){
       result_element.appendChild(new_element);
       let answerBox = document.getElementById('answer');
       let diagnosisStart = document.getElementById('diagnosisStartButton');
-      // diagnosisStart.addEventListener('click', function() {
+      // 結果表示
       answerBox.classList.add("showBox");
-            // 診断開始ボタンを押せないようにする
-      // diagnosisStart.style.pointerEvents= "none";
       diagnosisStart.classList.add('no-more-click');
-      // });
+      // 結果の曲名のYouTubeのURLを反映させ表示
       let new_url = 
       `<iframe height="315" src=${intense[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
@@ -306,13 +297,10 @@ $(function(){
       result_element.appendChild(new_element);
       let diagnosisStart = document.getElementById('diagnosisStartButton');
       let answerBox = document.getElementById('answer');
-      // diagnosisStart.addEventListener('click', function() {
+      // 結果表示
       answerBox.classList.add("showBox");
-            // 診断開始ボタンを押せないようにする
-            // diagnosisStart.style.pointerEvents= "none";
-      // });
       diagnosisStart.classList.add('no-more-click');
-
+      // 結果の曲名のYouTubeのURLを反映させ表示
       let new_url = 
       `<iframe height="315" src=${cry[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
@@ -325,12 +313,10 @@ $(function(){
       result_element.appendChild(new_element);
       let diagnosisStart = document.getElementById('diagnosisStartButton');
       let answerBox = document.getElementById('answer');
-      // diagnosisStart.addEventListener('click', function() {
+      // 結果表示
       answerBox.classList.add("showBox");
-            // 診断開始ボタンを押せないようにする
-            // diagnosisStart.style.pointerEvents= "none";
-            diagnosisStart.classList.add('no-more-click');
-      // });
+      diagnosisStart.classList.add('no-more-click');
+      // 結果の曲名のYouTubeのURLを反映させ表示
       let new_url = 
       `<iframe height="315" src=${party[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
@@ -348,13 +334,9 @@ $(function(){
       result_element.appendChild(new_element);
       let answerBox = document.getElementById('answer');
       let diagnosisStart = document.getElementById('diagnosisStartButton');
-      // diagnosisStart.addEventListener('click', function() {
-      answerBox.classList.add("showBox");
-            // 診断開始ボタンを押せないようにする
-      // diagnosisStart.style.pointerEvents= "none";
+      // 結果表示
       diagnosisStart.classList.add('no-more-click');
-
-      // });
+      // 結果の曲名のYouTubeのURLを反映させ表示
       let new_url = 
       `<iframe height="315" src=${all[0][1]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
       +' </iframe>';
@@ -363,4 +345,3 @@ $(function(){
   }
   });
 });
-
