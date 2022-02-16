@@ -94,12 +94,11 @@ label, input[type='checkbox'] {
   font-size: 10rem;
 }
 
-
-/* .result{width:300px;
-           height:80px;
-           background:#ced;
-           border:1px solid #a7e;
-} */
+.share-paragraph{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.5rem;
+}
 
 footer{
   background:#DEFFFC;
