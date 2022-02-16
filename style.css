@@ -38,15 +38,16 @@ main h1{
 }
 .card {
   display: none;
-  width: 44rem; 
   height: 23rem; 
-  margin: 1rem;
   background-color: #DEFFFC;
   -webkit-animation:colour 10s linear infinite;
   -moz-animation:colour 10s linear infinite;
 }
 .card p {
   font-size: 1.4rem;
+}
+.card ul {
+  padding: 0;
 }
 .card ul li{
   /* text-align: center; */
@@ -81,7 +82,7 @@ label, input[type='checkbox'] {
 /* 選択肢の色を変える */
 .change-color {
   /* cssの優先順位 !importantがないと上の.card ul liの方が優先されて、背景色が変わらない */
-  background-color: royalblue !important;
+  background-color: #ffffd6 !important;
 }
 .answer{
   display: none;
@@ -89,7 +90,9 @@ label, input[type='checkbox'] {
 .showBox {
   display: block;
 }
-
+.no-more-click {
+  display: none !important;
+}
 .song{
   font-size: 10rem;
 }
