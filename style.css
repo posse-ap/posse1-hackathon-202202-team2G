@@ -1,0 +1,192 @@
+header{
+  background:#DEFFFC;
+  -webkit-animation:colour 10s linear infinite;
+  -moz-animation:colour 10s linear infinite;
+}
+
+header h1{
+  font-family: "Sofia", sans-serif;
+  width: 100%;
+}
+.header{
+  position: fixed;
+  /* justify-content: space-between; */
+  width: 100%;
+}
+
+.header-title{
+  margin-left: 3%!important;
+}
+
+.header-img{
+  width: 100%;
+  height: 50%;
+}
+
+.header-subtitle{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Shippori Mincho', serif;
+}
+
+
+main{
+  /* background-color: #f8dfd2; */
+  background:#DEFFFC;
+  -webkit-animation:colour 10s linear infinite;
+  -moz-animation:colour 10s linear infinite;
+}
+
+main h1{
+  font-family: "Sofia", sans-serif;
+  font-size: 5rem;
+  text-shadow: 0.2rem 0.2rem 0 #c3a400;
+}
+.card {
+  display: none;
+  height: 23rem; 
+  background-color: #DEFFFC;
+  -webkit-animation:colour 10s linear infinite;
+  -moz-animation:colour 10s linear infinite;
+}
+.card p {
+  font-size: 1.4rem;
+}
+.card ul {
+  padding: 0;
+}
+.card ul li{
+  /* text-align: center; */
+  margin: 0.6rem;
+  /* border:1px solid #ebebeb;  */
+  height: 3.1rem; 
+  font-weight: bold; 
+  background-color: white;
+  box-shadow: 0 0.2rem 0.2rem #e6e6e6; 
+  line-height: 3.1rem;
+  list-style: none;
+}
+
+input[type=checkbox] {
+  display: none; /* チェックボックス□を非表示にする */
+}
+label {
+  width: 100%; /* 適用範囲をliタグ内全てにさせる */
+}
+/* チェックボックスのマウスポインタの形状変える */
+label, input[type='checkbox'] {
+  cursor: pointer;
+}
+
+
+/* 診断開始ボタン */
+.diagnosis-start-button {
+  /* display: none; */
+}
+
+
+/* 選択肢の色を変える */
+.change-color {
+  /* cssの優先順位 !importantがないと上の.card ul liの方が優先されて、背景色が変わらない */
+  background-color: #ffffd6 !important;
+}
+.answer{
+  display: none;
+}
+.showBox {
+  display: block;
+}
+.no-more-click {
+  display: none !important;
+}
+.song{
+  font-size: 10rem;
+}
+
+.share-paragraph{
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.5rem;
+}
+
+footer{
+  background:#DEFFFC;
+  -webkit-animation:colour 10s linear infinite;
+  -moz-animation:colour 10s linear infinite;
+}
+
+h2{
+  font-size: 3rem;
+  font-family: serif;
+}
+
+h3{
+  font-size: 3rem;
+  font-family:serif;
+}
+
+.modal-content{
+  font-family: serif;
+}
+
+.modal-body{
+  display: flex;
+}
+
+@-webkit-keyframes colour{
+  0%{
+    background:#c7e5e2
+  }
+
+  20%{
+    background:#E0F2F9
+  }
+
+  35%{
+    background:#E2E4F6
+  }
+
+  50%{
+    background:#E5D6EA
+  }
+
+  65%{
+    background:#E2E4F6
+  }
+
+  80%{
+    background:#E0F2F9
+  }
+
+  100%{
+    background:#c7e5e2
+  }
+
+}
+@media screen and (max-width: 1200px) {
+  .header{ position: static;}
+  .header-subtitle img{
+    width: 50%;
+  }
+  .modal-body{
+    display: block;
+  }
+  .modal-pic{
+    margin-top: 1rem;
+  }
+  
+}
+@media screen and (max-width: 700px) {
+  .header-title{
+    margin-left: 0%!important;
+  } 
+  .header-subtitle-sm{
+    display: none;
+  }
+  .footer-title{
+    font-size: 1.5rem;
+  }
+  .footer-subtitle{
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
