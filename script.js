@@ -335,6 +335,7 @@ $(function(){
       let answerBox = document.getElementById('answer');
       let diagnosisStart = document.getElementById('diagnosisStartButton');
       // 結果表示
+      answerBox.classList.add("showBox");
       diagnosisStart.classList.add('no-more-click');
       // 結果の曲名のYouTubeのURLを反映させ表示
       let new_url = 
